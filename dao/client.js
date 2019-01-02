@@ -7,10 +7,7 @@ const net = require('net'),
     fs = require('fs'),
     Queue = require('js-queue');
 
-let Events = require('event-pubsub/es5');
-if(process.version[1]>4){
-    Events = require('event-pubsub');
-}
+let Events = require('event-pubsub');
 
 let eventParser = new EventParser();
 

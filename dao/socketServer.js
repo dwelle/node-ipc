@@ -7,10 +7,7 @@ const net = require('net'),
     EventParser = require('../entities/EventParser.js'),
     Message = require('js-message');
 
-let Events = require('event-pubsub/es5');
-if(process.version[1]>4){
-    Events = require('event-pubsub');
-}
+let Events = require('event-pubsub');
 
 let eventParser = new EventParser();
 
